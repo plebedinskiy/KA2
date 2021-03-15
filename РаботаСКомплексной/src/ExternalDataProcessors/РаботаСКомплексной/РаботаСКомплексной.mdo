@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae726c51-50df-4c06-949a-f76236e3aaf6">
+  <producedTypes>
+    <objectType typeId="cafc8de6-92e0-421b-be3e-0c42c82e3921" valueTypeId="4045be82-03af-4aaa-aeba-0d4843caa6f0"/>
+  </producedTypes>
+  <name>РаботаСКомплексной</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с комплексной</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="cb8309d3-f05f-4b48-a313-a349842c3967"/>
+  <defaultForm>ExternalDataProcessor.РаботаСКомплексной.Form.Форма</defaultForm>
+  <attributes uuid="855a1522-6ffc-41aa-b8a0-860cca8d8f68">
+    <name>СтроительнаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строительная работа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УСОERP_СтроительныеРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6c582161-f169-4ed7-b4b0-d922f2cd4ea7">
+    <name>НазваниеФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="064bd7ee-1b9f-43f4-b373-2097b6c3297a">
+    <name>ГрафикРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Календари</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d21c96e4-4c1a-4d39-81d2-962947aed727">
+    <name>ОбъектСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект строительства</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СМ_ОбъектыСтроительства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="55222b25-d7fa-4a8b-a038-e22439bf83ba">
+    <name>ВидСценария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сценария</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УСОERP_ВидыСценариевПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="d2fa0856-8fea-4e1f-a2a6-c90273be6dd2">
+    <name>ПутьКФайлуНаСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу на сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="ba854eef-1198-42b0-a7ed-9b92a668fcaa">
+    <producedTypes>
+      <objectType typeId="7a1d8d2a-d6b2-4523-a676-c191f5fb6765" valueTypeId="8025704e-a22a-4bd7-acc7-ce2c3cc42847"/>
+      <rowType typeId="803ed7fd-2f84-4e96-a9e5-04d4da2508ff" valueTypeId="548f20d7-b5f2-48f1-a63c-e597f552c0cf"/>
+    </producedTypes>
+    <name>СоответствиеПоНоменклатуре</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие по номенклатуре</value>
+    </synonym>
+    <attributes uuid="c13d2e72-64f7-4f37-8b03-f7de4a5b7ca2">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ca952026-e167-4431-b273-3880766f24be">
+      <name>СтрокаНоменклатурыИзФайла</name>
+      <synonym>
+        <key>ru</key>
+        <value>Строка номенклатуры из файла</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>512</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8b0fe06d-30fc-45eb-a427-e19700fe24bf">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
