@@ -31,7 +31,7 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>1024</length>
+        <length>1000</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
