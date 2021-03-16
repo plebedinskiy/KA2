@@ -31,7 +31,7 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>1000</length>
+        <length>1024</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -90,6 +90,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="c66cf59a-cfdf-48a7-9e40-6a7dd2ac21aa">
+    <name>СтроительнаяРаботаСтрокой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строительная работа строкой</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="ba854eef-1198-42b0-a7ed-9b92a668fcaa">
     <producedTypes>
       <objectType typeId="7a1d8d2a-d6b2-4523-a676-c191f5fb6765" valueTypeId="8025704e-a22a-4bd7-acc7-ce2c3cc42847"/>
@@ -127,6 +142,64 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="5f05c5d5-8941-4c5a-ac96-bb9086116cbc">
+    <producedTypes>
+      <objectType typeId="1d4a6aba-94f5-47b5-9817-af5f8c9313f5" valueTypeId="3e524d84-77e3-443b-b1f8-edb6d422fb3c"/>
+      <rowType typeId="bba480ee-00df-41c8-a384-f94ca47cfd85" valueTypeId="710cf8d3-bcee-42ef-9adf-16e507b344db"/>
+    </producedTypes>
+    <name>ТЧМатериалыИзФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЧМатериалы из файла</value>
+    </synonym>
+    <attributes uuid="c8454fe6-f9ef-42b1-ab67-9716c50aadf3">
+      <name>НоменклатураСтрокой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура строкой</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>1024</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="699f98ce-23cb-40b2-bacc-b53722b67d67">
+      <name>ЕдиницыИзмеренияСтрокой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единицы измерения строкой</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e8bf0498-564e-4bb2-867e-f89b935402d6">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>5</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
   <forms uuid="8b0fe06d-30fc-45eb-a427-e19700fe24bf">
