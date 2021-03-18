@@ -127,21 +127,20 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
-    <attributes uuid="ca952026-e167-4431-b273-3880766f24be">
-      <name>СтрокаНоменклатурыИзФайла</name>
+    <attributes uuid="f0b31ac6-926c-4306-9b3e-513e81ec069d">
+      <name>НоменклатураСтрокой</name>
       <synonym>
         <key>ru</key>
-        <value>Строка номенклатуры из файла</value>
+        <value>Номенклатура строкой</value>
       </synonym>
       <type>
         <types>String</types>
         <stringQualifiers>
-          <length>512</length>
+          <length>1024</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
   <tabularSections uuid="5f05c5d5-8941-4c5a-ac96-bb9086116cbc">
@@ -170,10 +169,10 @@
       <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="699f98ce-23cb-40b2-bacc-b53722b67d67">
-      <name>ЕдиницыИзмеренияСтрокой</name>
+      <name>ЕдиницаИзмеренияСтрокой</name>
       <synonym>
         <key>ru</key>
-        <value>Единицы измерения строкой</value>
+        <value>Единица измерения строкой</value>
       </synonym>
       <type>
         <types>String</types>
@@ -197,6 +196,44 @@
           <precision>12</precision>
           <scale>5</scale>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="e140dbef-c393-46f5-8e29-c1aeacaa6666">
+    <producedTypes>
+      <objectType typeId="12a0f769-ce3e-4a9e-abd0-c98d82d986a4" valueTypeId="c8d32757-fee5-4dec-b415-1ee7157f83ad"/>
+      <rowType typeId="146581af-fb49-476c-b6aa-cbdaae4b72c0" valueTypeId="71711e37-3887-402a-9984-38fb0808e65d"/>
+    </producedTypes>
+    <name>СоответствиеЕдиницИзмерений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие единиц измерений</value>
+    </synonym>
+    <attributes uuid="1a93ff2a-d18f-4eec-aa24-dae51fcae3e9">
+      <name>ЕдиницаИзмеренияСтрокой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения строкой</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4cd1a6b8-4df8-4501-ae09-3c199d8b507e">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
