@@ -69,7 +69,7 @@
       <value>Вид сценария</value>
     </synonym>
     <type>
-      <types>EnumRef.УСОERP_ВидыСценариевПланирования</types>
+      <types>CatalogRef.УСОERP_СценарииПланированияПроектовСтроительства</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -101,6 +101,72 @@
       <stringQualifiers>
         <length>150</length>
       </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ecc1f1d7-bd53-46c5-98ba-d9898fa4c5c8">
+    <name>ВидНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c397bae9-2188-4cdc-9174-9d67519a304c">
+    <name>ГруппаАналитическогоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа аналитического учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыАналитическогоУчетаНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e3cf5c91-0ed9-4797-af35-3a12139b5fac">
+    <name>ГруппаФинансовогоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа финансового учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыФинансовогоУчетаНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9e90ffc4-a19c-4a1c-ba97-61ad8804489f">
+    <name>НачалоРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало работ</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f5485007-ed41-4aea-9420-c91e24b82e86">
+    <name>ОкончаниеРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание работ</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -234,6 +300,22 @@
       </synonym>
       <type>
         <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f6ae7740-a9de-47da-b276-12b292f5cb84">
+      <name>КоэфициентПереводаКБазовой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэфициент перевода к базовой</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
