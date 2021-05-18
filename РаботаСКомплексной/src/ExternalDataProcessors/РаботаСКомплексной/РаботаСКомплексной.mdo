@@ -171,6 +171,36 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="7ee1dcc9-d8ff-4e20-8ed7-a0f0458f45b0">
+    <name>НазваниеФайлаМеталлоконструкций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e7fb61af-5e32-4cb2-ba92-42065d5e3607">
+    <name>ПутьКФайлуМеталлоконструкцийНаСервере</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу металлоконструкций на сервере</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="ba854eef-1198-42b0-a7ed-9b92a668fcaa">
     <producedTypes>
       <objectType typeId="7a1d8d2a-d6b2-4523-a676-c191f5fb6765" valueTypeId="8025704e-a22a-4bd7-acc7-ce2c3cc42847"/>
@@ -319,6 +349,170 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="95e8e493-1ca3-4b83-bd15-116430457a0e">
+    <producedTypes>
+      <objectType typeId="a9e4d801-8741-4e15-b0dd-d0739015869a" valueTypeId="b5d91f36-6a61-4c35-b6dd-465bcdb463f7"/>
+      <rowType typeId="0fd005aa-5c15-4181-915f-c3dfb28838be" valueTypeId="0cbfdd35-4e14-4321-b878-bf149eebe77c"/>
+    </producedTypes>
+    <name>Металлоконструкции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Металлоконструкции</value>
+    </synonym>
+    <attributes uuid="ffed98fa-0e67-4809-b622-a936328aa88f">
+      <name>НазваниеМеталлоконструкции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Название металлоконструкции</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="54e23229-26ef-49e7-9849-a177b8065863">
+      <name>НазваниеМатериала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Название материала</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b4fdc8af-1731-4097-88ad-30511ccc338a">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3c1bcdc0-dd49-4e2d-b493-0f5cf112bce0">
+      <name>Длина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Длина</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d8192bcf-0149-4942-b46f-da1670eec12c">
+      <name>Сталь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сталь</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="72a070bc-c25b-4511-b727-8f0fffb0a737">
+      <name>ВесОдной</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес одной</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="365ca07b-06b2-4def-b797-b7e18e86129a">
+      <name>ВесВсех</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес всех</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5f2655a5-60bb-457d-a02e-b3d68fdd4250">
+      <name>МеталлоконструкцияСсылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Металлоконструкция ссылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="143596db-4d30-4649-9051-1329b3e9d86a">
+      <name>МатериалСсылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Материал ссылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="77a8407c-8730-4350-a53a-4480a06c5528">
+      <name>КоличествоМеталлоконструкций</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество металлоконструкций</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
   <forms uuid="8b0fe06d-30fc-45eb-a427-e19700fe24bf">
