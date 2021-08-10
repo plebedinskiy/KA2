@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae726c51-50df-4c06-949a-f76236e3aaf6">
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79052e8a-7efa-4d68-9337-df75afe19d1a">
   <producedTypes>
-    <objectType typeId="cafc8de6-92e0-421b-be3e-0c42c82e3921" valueTypeId="4045be82-03af-4aaa-aeba-0d4843caa6f0"/>
+    <objectType typeId="778b22e9-62eb-4c0b-b94f-5a524e5c3049" valueTypeId="b74f1561-5089-4f06-b679-0834656fd392"/>
   </producedTypes>
   <name>РаботаСКомплексной</name>
   <synonym>
     <key>ru</key>
     <value>Работа с комплексной</value>
   </synonym>
-  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="8a43a0d3-94f5-46e0-b59b-03ab240a75a1"/>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="31a0af0d-4672-4906-81c4-d826c2b7d1b6"/>
   <defaultForm>ExternalDataProcessor.РаботаСКомплексной.Form.Форма</defaultForm>
   <attributes uuid="855a1522-6ffc-41aa-b8a0-860cca8d8f68">
     <name>СтроительнаяРабота</name>
